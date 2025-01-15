@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <main class="content px-3 py-2">
+        <div class="container-fluid">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">blood request form</h5>
+                    <div class="card-body">
+                        <form id="donatinform">
+                            <div class="row g-3 mb-4">
+                                <div class="col md-4">
+                                    <label>full name</label>
+                                    <div class="input-group">
+                                    
+                                    <span class="input-group-text">
+                                        <i class="  fa-solid fa-user" style="color:blue"></i></span>
+                        <input type="text" class="form-control" placeholder="Enter full Name" required>
+                                    </span>
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="col-md-4"> 
+                                    <label>enter email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class=" fa-solid fa-envelope"   style="color: blue;"></i>
+                                        </span>
+                                            <input type="text"  class="form-control" placeholder="Enter contect number" required>
+                                    </div>
+                                  
+                            </div>
+                            <div class="col-md-4"> 
+                                <label>contect number</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-phone-volume"   style="color: blue;"></i>
+                                    </span>
+                                        <input type="text"  class="form-control" placeholder="Enter contect number" required>
+                                </div>
+                              
+                        </div>
+                            </div>
+                            
+
+                                
+
+                            
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4"> 
+                                <label>region</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-location-dot" style="color: blue;"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="enter region" required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4"> 
+                                <label>town</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-city" style="color: blue;"></i>
+                                    </span>
+                                   <input type="text" class="form-control" placeholder="enter town" required>
+                              
+                        </div>
+                            </div>
+
+                    
+                        <div class="col-md-4"> 
+                            <label>village</label>
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fa-solid fa-city" style="color: blue;"></i>
+                                </span>
+                                 <input type="text" id="village" class="form-control" placeholder="enter village" required>
+                            </div>
+                          
+                    </div>
+
+                    
+
+        
+
+                        
+
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4"> 
+                                <label>blood type</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class="fa-solid fa-droplet" style="color: blue;"></i>
+                                    </span>
+                                    <select>
+                                        <option>A+</option>
+                                        <optio>B+</optio>
+                                        <option>B-</option>
+                                        <option>AB+</option>
+                                        <option>A-</option>
+                                        <option>O-</option>
+                                        <optio>O+</optio>
+                                    </select>
+                                  
+                                </div>
+                              
+                        </div>
+
+
+                  
+                        <!---->
+                    </div>
+
+             
+
+
+                        </div>
+                    
+
+                        </form>
+                        
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="row g-3 mb-4">
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <!---->
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">list of blood request</h5>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped"> 
+                    <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>region</th>
+                    <th>town</th>
+                    <th>village</th>
+                    <th>blood type</th>
+                    <th>status</th>
+               
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>ahmed ali </td>
+                        <td>amed ali@gmail.com</td>
+                        <td>78887878</td>
+                        <td>banaadir</td>
+                        <td>mogdisho</td>
+                        <td>hodan</td>
+                        <td>A+</td>
+                        <td>accepted</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>fatima mahamed </td>
+                        <td>fatima@gmail.com</td>
+                        <td>7667667</td>
+                        <td>galmudud</td>
+                        <td>dhusa mareb</td>
+                        <td>brama</td>
+                        <td>B+</td>
+                        <td>waiting</td>
+                 
+                    </tr>
+                    <tr>
+                        <td>3</td>td
+                        <td>farah ali</td>
+                        <td>farah@gmail.com</td>
+                        <td>767333777</td>
+                        <td>hiiran</td>
+                        <td>baladweyne </td>
+                        <td>waberi</td>
+                        <td>O+</td>
+                        <td>rejected</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>samira hassan </td>
+                        <td>samira @gmail.com</td>
+                        <td>238887878</td>
+                        <td>jubbaland</td>
+                        <td>kismaayo</td>
+                        <td>qoane</td>
+                        <td>AB+</td>
+                        <td>waiting</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>ahmed jama </td>
+                   <td>axmedjama@gmail.com </td>
+                        <td>7883387878</td>
+                        <td>karkaaar</td>
+                        <td>qardho</td>
+                        <td>israac</td>
+                        <td>A-</td>
+                        <td>accepted</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>yusuf ahmed </td>
+                        <td>yusufahmed@gmail.com</td>
+                        <td>677787788</td>
+                        <td>shabeele</td>
+                        <td>jowhar</td>
+                        <td>wabishabeel</td>
+                       <td>O-</td>
+                        <td>rejected</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+
+     </main>
+
+
+    
+</body>
+
+</html>

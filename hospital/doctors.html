@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+     
+         
+
+            <!-- Doctor Registration Form -->
+             <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="card-title">Add new doctor</h5>
+                            <div class="card-body">
+                                <form id="doctorform">
+                                    <div class="row g-3 mb-4">
+                                        <div class="col md-4">
+                                            <label>full name</label>
+                                            <div class="input-group">
+                                            
+                                            <span class="input-group-text">
+                                                <i class="  fa-solid fa-user" style="color:blue"></i></span>
+                                <input type="text" class="form-control" placeholder="Enter Name" required>
+                                            </span>
+                                            </div>
+                                        </div>
+                                            <div class="col-md-4"> 
+                                                <label>email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        <i class=" fa-solid fa-envelope"   style="color: blue;"></i>
+                                                    </span>
+                                                        <input type="text"  class="form-control" placeholder="Enter email" required>
+                                                </div>
+                                          
+                                        </div>
+                                        <div class="col-md-4"> 
+                                            <label>title</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <i class="  fa-solid fa-clipboard"   style="color: blue;"></i>
+                                                </span>
+                                                    <input type="text"  class="form-control" placeholder="Enter title" required>
+                                            </div>
+                                          
+                                    </div>
+                                    
+
+                                        
+
+                                    </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4"> 
+                                        <label>department</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-regular fa-building" style="color: blue;"></i>
+                                            </span>
+                                            <select class="form-select">
+                                                <option>cardiology</option>
+                                                <option>neurology</option>
+                                                <option>physiology</option>
+                                        
+                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4"> 
+                                        <label>experience</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-regular fa-building"   style="color: blue;"></i>
+                                            </span>
+                                                <input type="text"  class="form-control" placeholder="Enter experience" required>
+                                        </div>
+                                      
+                                </div>
+
+                            
+                                <div class="col-md-4"> 
+                                    <label>contect number</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa-solid fa-phone-volume"   style="color: blue;"></i>
+                                        </span>
+                                            <input type="text"  class="form-control" placeholder="Enter contect number" required>
+                                    </div>
+                                  
+                            </div>
+
+                            
+
+                
+
+                                </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-4"> 
+                                        <label>degree</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fa-solid fa-graduation-cap"   style="color: blue;"></i>
+                                            </span>
+                                                <input type="text"  class="form-control" placeholder="Enter degree" required>
+                                        </div>
+                                      
+                                </div>
+
+                                <div class="col-md-4"> 
+                                    <label>fees</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="  fa-solid fa-dollar-sign"   style="color: blue;"></i>
+                                        </span>
+                                            <input type="text"  class="form-control" placeholder="Enter fees" required>
+                                    </div>
+                                  
+                            </div>
+
+                            <div class="col-md-4">
+                                <labe>profile photo</labe>
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        <i class=" fa-solid fa-camera" style="color: blue;"></i>
+                                    </span>
+                                    <input class="file-upload-input" type="file" onchange="this" accept="image/*">
+                                </div>
+                                </div>
+
+                            </div>
+
+
+
+                                </div>
+                            
+
+                                </form>
+                                
+                            </div>
+                        </div>
+
+                </div>
+
+                <div class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <!-- list of doctors-->
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">list of doctors</h5>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <tr>
+                            <th>#</th>
+                            <th>name</th>
+                            <th>email</th>
+                            <th>title</th>
+                            <th>department</th>
+                            <th>experience</th>
+                            <th>contact </th>
+                            <th>fees</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>dr john doe </td>
+                                <td>john doe @gmail.com</td>
+                                <td>cardiologist</td>
+                                <td>cardiology</td>
+                                <td>10 years</td>
+                                <td> 123 456 7890</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>dr john smith</td>
+                                <td>johnsmith@gmail.com</td>
+                                <td>neurologist</td>
+                                <td>neurology</td>
+                                <td>8 years</td>
+                                <td>234 546 677</td>
+                                <td>$120</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+             </main>
+
+
+           
+         
+    
+</body>
+
+</html>
