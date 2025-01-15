@@ -1,0 +1,103 @@
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<title>Department</title>
+<body>
+
+    <!-- Halkaan ka bilow samaynta formlkaaga -->
+
+<main class="content px-3 py-2">
+        <div class="container-fluid">
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">add department</h5>
+                </div>
+                <div class="card-body">
+                    <form id="teachersform">
+                <!--  department id department sc date  one row-->
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-4"> 
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="fa-solid fa-id-card"   style="color: blue;"></i>
+                            </span>
+                                <input type="text"  class="form-control" placeholder="Enter department id" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-regular fa-building" style="color:blue"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter department nc" required>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="           fa-solid fa-calendar-days" style="color:blue"></i></span>
+                            <input type="datetime" class="form-control" placeholder="datetime" required>
+                        </div>
+                    </div>
+                    <!-- bottoms-->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success w-100">Save <i class="fas fa-save"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-danger w-100">Delete <i class="fas fa-trash"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-warning w-100">Update <i class="fas fa-pen"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-info w-100">Search <i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+            <!-- department table-->
+             <div class="card">
+                <div class="card-header">
+                <h4> departments</h4>
+                </div>
+                <di class="card-body">
+                    <table class=" table table-striped">
+                        <th>
+                            <tr>
+                                <th>#</th>
+                                <th>department name</th>
+                                <th>registeration date</th>
+                            </tr>
+                        </th>
+                        <tr>
+                            <td>1</td>
+                            <td>computer science</td>
+                            <td>2024-01-01</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Midwifery</td>
+                            <td>2024-03-01</td>
+
+                        </tr>
+
+
+                    </table>
+
+                </di>
+
+
+             </div>
+                
+</body>
+
+</html>
